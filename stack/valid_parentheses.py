@@ -1,5 +1,5 @@
 class Solution(object):
-    def isValid(self, s):
+    def is_valid(self, s):
         valid_pairs = {'(': ')', '[': ']', '{': '}'}
         stack = []
 
