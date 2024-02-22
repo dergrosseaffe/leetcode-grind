@@ -17,6 +17,9 @@ public:
         while (head != nullptr) {
             head = head->next;
             i++;
+
+            // moves middle pointer every two head moves ensuring it will be
+            // in the middle of the list when head reaches the end
             if (i % 2 == 0) middle = middle->next;
         }
 
