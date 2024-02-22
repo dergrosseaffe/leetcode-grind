@@ -13,8 +13,7 @@
 class Solution {
 public:
     int checkDepth(TreeNode *root) {
-        if (root == nullptr)
-            return 0;
+        if (root == nullptr) return 0;
 
         int leftDepth = checkDepth(root->left);
         if (leftDepth == -1) return -1;
