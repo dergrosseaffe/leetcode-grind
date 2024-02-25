@@ -17,8 +17,8 @@ class Solution:
 
         r = []
         while k > 0 and heap:
-            closest_dist = heapq.heappop(heap)
-            r.extend(dp[closest_dist][:k])  # Makes sure not to exceed k points
-            k -= len(dp[closest_dist])
+            d = heapq.heappop(heap)
+            r.extend(dp[d][:k])  # Makes sure not to exceed k points
+            k -= len(dp[d])
 
         return r
