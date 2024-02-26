@@ -5,7 +5,7 @@ class Solution:
         moves = [(-1,0),(0,-1),(1,0),(0,1)]
         queue = deque()
 
-        # adds all zeroes as seeds to the queue and assing +Inf to all
+        # adds all zeroes as seeds to the queue and assigns +Inf to all
         # other cells
         for row in range(rows):
             for column in range(cols):
