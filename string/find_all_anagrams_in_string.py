@@ -16,7 +16,7 @@ class Solution:
         for i in range(len(p), len(s)):
             window_start = i - len(p)
             sc[ord(s[window_start]) - ord('a')] -= 1   # remove previous window char
-            sc[ord(s[i]) - ord('a')]     += 1   # count current window char
+            sc[ord(s[i]) - ord('a')]            += 1   # count current window char
 
             if sc == pc:
                 result.append(window_start + 1)
