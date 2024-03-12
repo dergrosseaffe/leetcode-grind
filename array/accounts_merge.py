@@ -29,11 +29,9 @@ class Solution:
                 uf.union(email, firstEmail)     # merges all emails with first email
                 emailToName[email] = name
 
-        rootEmails = {}
+        rootEmails = defaultdict(list)
         for email in emailToName.keys():
             rootEmail = uf.find(email)
-            if rootEmail not in rootEmails:
-                rootEmails[rootEmail] = []
             rootEmails[rootEmail].append(email)
 
         result = []
