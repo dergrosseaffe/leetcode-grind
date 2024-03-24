@@ -5,6 +5,7 @@ class Solution:
             li, ri = 0, 0
 
             while li < len(left) and ri < len(right):
+                # modifies comparison step on mergesort
                 a = str(left[li]) + str(right[ri])
                 b = str(right[ri]) + str(left[li])
 
