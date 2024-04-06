@@ -28,9 +28,6 @@ class Trie:
             if char not in node.children:
                 return None
             node = node.children[char]
-
-        # if node.is_ending:
-        #     node.hot_degree += 1
         return node
 
 
