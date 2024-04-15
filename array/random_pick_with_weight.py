@@ -13,10 +13,7 @@ class Solution:
         left, right = 0, len(self.weights) - 1
         while left < right:
             mid = left + (right - left)//2
-
-            if r == self.weights[mid]:
-                return mid - 1
-            elif r > self.weights[mid]:
+            if r > self.weights[mid]:
                 left = mid + 1
             else:
                 right = mid
